@@ -33,6 +33,7 @@
         android:id="@+id/nav_fav"
         android:name="com.hisnElMuslem.myapplication.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
+
         tools:layout="@layout/fragment_gallery" />
 
     <fragment

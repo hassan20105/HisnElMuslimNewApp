@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="purple">#FF72547C</color>
     <color name="toolbar">#2F0F0F</color>
+    <color name="gray">#FF3D3D3D</color>
 </resources>
