@@ -48,13 +48,13 @@ public class HomeFragment extends Fragment {
         recyclerViewAdapter = new AzkarRecycleViewAdapter
                 (getActivity(), azkarDBServices.selectCategoryDetail(),false);
         recyclerView.setAdapter(recyclerViewAdapter);
-       /* favImg = root.findViewById(R.id.favImg);
+        favImg = root.findViewById(R.id.favImg);
         favImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), FavouriteAzkarActivity.class));
             }
-        });*/
+        });
 
 
         return root;

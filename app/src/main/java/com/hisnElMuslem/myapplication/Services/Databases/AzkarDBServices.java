@@ -64,6 +64,21 @@ public class AzkarDBServices implements ZekrDao {
     }
 
     @Override
+    public List<String> selectCountOfZekrCategoryDetail(String category) {
+        return db.zekrDao().selectCountOfZekrCategoryDetail(category);
+    }
+
+    @Override
+    public List<String> selectReferenceOfZekrCategoryDetail(String category) {
+        return db.zekrDao().selectReferenceOfZekrCategoryDetail(category);
+    }
+
+    @Override
+    public List<String> selectDescriptionOfZekrCategoryDetail(String category) {
+        return db.zekrDao().selectDescriptionOfZekrCategoryDetail(category);
+    }
+
+    @Override
     public int selectDistinctFavourite(String input) {
         return db.zekrDao().selectDistinctFavourite(input);
     }

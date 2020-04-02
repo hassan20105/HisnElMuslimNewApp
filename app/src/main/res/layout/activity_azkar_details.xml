@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="10"
     android:orientation="vertical"
-    android:theme="@style/AppTheme"
+    android:theme="@style/AppTheme2"
     tools:context="com.hisnElMuslem.myapplication.Activities.AzkarDetailsActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -45,12 +47,13 @@
 
 
     <androidx.viewpager.widget.ViewPager
-        android:layout_marginTop="15dp"
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
 
     </androidx.viewpager.widget.ViewPager>
+
+
 
 </LinearLayout>

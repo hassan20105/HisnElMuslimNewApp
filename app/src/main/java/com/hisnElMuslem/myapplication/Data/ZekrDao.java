@@ -38,6 +38,15 @@ public interface ZekrDao {
     @Query("SELECT Distinct Category FROM ZekrItems where favourite = 1")
     List<String> selectFavouriteCategoryDetail();
 
+    @Query("SELECT  count FROM ZekrItems where category = (:category)")
+    List<String> selectCountOfZekrCategoryDetail(String category);
+
+    @Query("SELECT  reference FROM ZekrItems where category = (:category)")
+    List<String> selectReferenceOfZekrCategoryDetail(String category);
+
+    @Query("SELECT  description FROM ZekrItems where category = (:category)")
+    List<String> selectDescriptionOfZekrCategoryDetail(String category);
+
     @Query("SELECT  favourite FROM ZekrItems where category =(:input)")
     int selectDistinctFavourite(String input);
 
