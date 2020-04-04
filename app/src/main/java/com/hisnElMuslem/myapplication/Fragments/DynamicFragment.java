@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment;
 import com.hisnElMuslem.myapplication.R;
 
 public class DynamicFragment extends Fragment {
-    private TextView display_TV,countTV;
+    private TextView display_TV,countTV,refTV ,descTV;
 
     @Nullable
     @Override
@@ -21,9 +21,15 @@ public class DynamicFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_dynamic, container, false);
         display_TV = view.findViewById(R.id.display_TV);
         countTV = view.findViewById(R.id.countTV);
+        refTV = view.findViewById(R.id.refTV);
+        descTV = view.findViewById(R.id.desc_TV);
         String msg = getArguments().getString("msg");
         String count = getArguments().getString("count");
+        String ref = getArguments().getString("ref");
+        String desc = getArguments().getString("desc");
+        refTV.setText(ref);
         display_TV.setText(msg);
+        descTV.setText(desc);
         if(count.equals(null)||count.equals("1")||count.equals("مرة وأحدة"))
         countTV.setText("مرة واحدة");
         else

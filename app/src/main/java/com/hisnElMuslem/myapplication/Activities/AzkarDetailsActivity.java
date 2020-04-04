@@ -34,8 +34,10 @@ public class AzkarDetailsActivity extends AppCompatActivity {
         headerNameTV.setText(getIntent().getStringExtra("category"));
         ArrayList<String> zekrItems = getIntent().getStringArrayListExtra("azkarList");
         List<String>countItems = azkarDBServices.selectCountOfZekrCategoryDetail(getIntent().getStringExtra("category"));
+        List<String>refItems = azkarDBServices.selectReferenceOfZekrCategoryDetail(getIntent().getStringExtra("category"));
+        List<String>descItems = azkarDBServices.selectDescriptionOfZekrCategoryDetail(getIntent().getStringExtra("category"));
         viewPager = findViewById(R.id.view_pager);
-        adapter = new FragmentCollectionAdapter(getSupportFragmentManager(), zekrItems,countItems);
+        adapter = new FragmentCollectionAdapter(getSupportFragmentManager(), zekrItems,countItems,refItems,descItems);
         viewPager.setAdapter(adapter);
 
 

@@ -38,8 +38,7 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:28.+'
     implementation 'androidx.gridlayout:gridlayout:1.0.0'
     implementation 'com.android.volley:volley:1.1.1'
-    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
-
+    implementation 'com.github.stefanodp91.android:circularseekbar:0.2'
     def room_version = "2.2.4"
 
     implementation "androidx.room:room-runtime:$room_version"

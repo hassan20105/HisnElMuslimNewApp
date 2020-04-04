@@ -15,12 +15,14 @@ import java.util.List;
 public class FragmentCollectionAdapter extends FragmentStatePagerAdapter {
     private ArrayList<String> zekrItems;
     private List<String>countItesms;
-    public FragmentCollectionAdapter( FragmentManager fm, ArrayList<String> zekrItems,List<String>countItesms) {
+    private List<String>refItems;
+    private List<String>descItems;
+    public FragmentCollectionAdapter( FragmentManager fm, ArrayList<String> zekrItems,List<String>countItesms,List<String>refItems,List<String>descItems) {
         super(fm);
         this.zekrItems = zekrItems;
         this.countItesms = countItesms;
-
-
+        this.refItems = refItems;
+        this.descItems = descItems;
     }
 
     @Override
@@ -29,6 +31,8 @@ public class FragmentCollectionAdapter extends FragmentStatePagerAdapter {
         Bundle bundle = new Bundle();
         bundle.putString("msg", zekrItems.get(position));
         bundle.putString("count",countItesms.get(position));
+        bundle.putString("ref",refItems.get(position));
+        bundle.putString("desc",descItems.get(position));
         dynamicFragment.setArguments(bundle);
         return dynamicFragment;
     }
