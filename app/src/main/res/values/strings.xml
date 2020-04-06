@@ -8,8 +8,8 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">الاذكار</string>
-    <string name="menu_gallery">الاذكار المفضلة</string>
-    <string name="menu_slideshow">فيديوهات</string>
+    <string name="menu_fav">الاذكار المفضلة</string>
+    <string name="menu_about">عن البرنامج</string>
 
     <string name="home_second">Home Second</string>
 </resources>

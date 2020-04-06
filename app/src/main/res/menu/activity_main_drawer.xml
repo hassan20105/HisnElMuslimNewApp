@@ -13,13 +13,13 @@
     <group>
         <item
             android:id="@+id/nav_fav"
-            android:icon="@drawable/menu"
-            android:title="@string/menu_gallery" />
+            android:icon="@drawable/star"
+            android:title="@string/menu_fav" />
     </group>
     <group>
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/menu"
-            android:title="@string/menu_slideshow" />
+            android:icon="@drawable/about"
+            android:title="@string/menu_about" />
     </group>
 </menu>

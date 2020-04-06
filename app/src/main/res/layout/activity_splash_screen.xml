@@ -8,4 +8,42 @@
     android:theme="@style/AppTheme2"
     tools:context="com.hisnElMuslem.myapplication.Activities.SplashScreenActivity">
 
+    <Button
+        android:id="@+id/readBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellow_rectangle_layout"
+        android:drawableBottom="@drawable/book"
+        android:drawablePadding="2dp"
+        android:onClick="onclick"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:shadowColor="#FEFDC9"
+        android:text="قراءة الاذكار"
+        android:textColor="#88000A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/videoBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="288dp"
+        android:layout_marginRight="288dp"
+        android:background="@drawable/yellow_rectangle_layout"
+        android:drawableBottom="@drawable/video"
+        android:drawablePadding="2dp"
+        android:onClick="onclick"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:shadowColor="#FEFDC9"
+        android:text="سماع الاذكار"
+        android:textColor="#88000A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 </androidx.constraintlayout.widget.ConstraintLayout>

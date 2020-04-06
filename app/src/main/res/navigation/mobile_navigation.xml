@@ -11,11 +11,11 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home">
 
-        <action
+  <!--      <action
             android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-            app:destination="@id/nav_home_second" />
+            app:destination="@id/nav_home_second" />-->
     </fragment>
-    <fragment
+   <!-- <fragment
         android:id="@+id/nav_home_second"
         android:name="com.hisnElMuslem.myapplication.ui.home.HomeSecondFragment"
         android:label="@string/home_second"
@@ -27,18 +27,18 @@
         <argument
             android:name="myArg"
             app:argType="string" />
-    </fragment>
+    </fragment>-->
 
     <fragment
         android:id="@+id/nav_fav"
         android:name="com.hisnElMuslem.myapplication.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_home"
 
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.hisnElMuslem.myapplication.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_about"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>

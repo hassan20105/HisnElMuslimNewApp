@@ -24,7 +24,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.navigation:navigation-fragment:2.2.1'
@@ -40,25 +40,19 @@ dependencies {
     implementation 'com.android.volley:volley:1.1.1'
     implementation 'com.github.stefanodp91.android:circularseekbar:0.2'
     def room_version = "2.2.4"
-
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
     // For Kotlin use kapt instead of annotationProcessor
-
     // optional - Kotlin Extensions and Coroutines support for Room
     implementation "androidx.room:room-ktx:$room_version"
-
     // optional - RxJava support for Room
     implementation "androidx.room:room-rxjava2:$room_version"
-
     // optional - Guava support for Room, including Optional and ListenableFuture
     implementation "androidx.room:room-guava:$room_version"
-
     // Test helpers
     testImplementation "androidx.room:room-testing:$room_version"
     implementation('com.thoughtworks.xstream:xstream:1.4.7') {
         exclude group: 'xmlpull', module: 'xmlpull'
     }
-
-
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
 }
