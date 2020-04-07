@@ -3,6 +3,7 @@
     package="com.hisnElMuslem.myapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.YoutubeActivity" android:theme="@style/AppTheme2"/>
+        <activity android:name=".Activities.YoutubeActivity" android:theme="@style/AppTheme2" android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"/>
         <activity
             android:name=".Activities.SplashScreenActivity"
             android:theme="@style/AppTheme2">

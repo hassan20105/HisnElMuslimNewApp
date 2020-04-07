@@ -6,10 +6,20 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_home">الاذكار</string>
     <string name="menu_fav">الاذكار المفضلة</string>
     <string name="menu_about">عن البرنامج</string>
-
     <string name="home_second">Home Second</string>
+    <string-array name="videoList">
+        <item>qNFkHHHeF48</item>
+        <item>DkYt4tBbXHo</item>
+        <item>v_YlrJpH3z8</item>
+        <item>yamVFrkHdEY</item>
+        <item>zZYonocPpMg</item>
+        <item>GQL0CCkmed4</item>
+        <item>dO9lh4OlgLs</item>
+        <item>dITvJpdpfqM</item>
+        <item>_Aq4TPhfHA8</item>
+        <item>HbY8x9tx-G0</item>
+    </string-array>
 </resources>
