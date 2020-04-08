@@ -4,99 +4,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4F4F4"
     android:layout_gravity="center"
-    android:gravity="top"
+    android:background="#F4F4F4"
+    android:gravity="center|top"
     android:orientation="vertical">
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="180dp"
         android:layout_margin="10dp"
-        >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_gravity="top"
-        android:gravity="top"
-        android:layout_margin="2dp"
-        android:orientation="vertical"
-        >
-    <TextView
-        android:id="@+id/display_TV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="2dp"
-        android:gravity="center|top"
-        android:text="display_TV"
-        android:layout_weight="2"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="normal|bold" />
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_gravity="top|center"
-        android:layout_weight="0"
-        app:srcCompat="@drawable/divider" />
+        android:layout_weight="3">
 
         <LinearLayout
-            android:id="@+id/layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:orientation="horizontal">
+            android:layout_gravity="top"
+            android:layout_margin="2dp"
+            android:gravity="top"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/refTV"
+                android:id="@+id/display_TV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="مرة واحدة"
+                android:layout_margin="2dp"
+                android:gravity="center|top"
+                android:text="display_TV"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/countTV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="مرة واحدة"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="normal|bold" />
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/img_div"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|center"
-            android:layout_marginTop="5dp"
-            android:layout_weight="0"
-            android:visibility="gone"
-            app:srcCompat="@drawable/divider" />
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_weight="1"
+        android:backgroundTint="@drawable/buttonselector"
+        app:cardCornerRadius="10dp">
 
         <TextView
-            android:id="@+id/desc_TV"
+            android:id="@+id/countTV"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:gravity="center"
-            android:padding="10dp"
-            android:text="display_TV"
-            android:textColor="#C62828"
-            android:textSize="18sp"
-            android:textStyle="normal|bold"
-            android:visibility="gone" />
-    </LinearLayout>
+            android:text="1"
+            android:textColor="@color/toolbar"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-    </ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/resetImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/reset" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/divider" />
+
+    <TextView
+        android:id="@+id/refTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="مرة واحدة"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desc_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="مرة واحدة"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>
