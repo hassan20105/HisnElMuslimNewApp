@@ -46,7 +46,6 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="25dp"
         android:layout_weight="1"
-        android:backgroundTint="@drawable/buttonselector"
         app:cardCornerRadius="10dp">
 
         <TextView
@@ -59,7 +58,7 @@
             android:gravity="center"
             android:text="1"
             android:textColor="@color/toolbar"
-            android:textSize="24sp"
+            android:textSize="35sp"
             android:textStyle="bold" />
 
         <RelativeLayout

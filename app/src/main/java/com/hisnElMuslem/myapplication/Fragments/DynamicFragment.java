@@ -64,7 +64,7 @@ public class DynamicFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.resetImgView:
                 countTV.setText(count);
-                cardview.setCardBackgroundColor(R.color.pink);
+
                 break;
 
         }
