@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view"
     >
-
     <group>
         <item
             android:id="@+id/nav_home"
@@ -15,6 +14,12 @@
             android:id="@+id/nav_fav"
             android:icon="@drawable/star"
             android:title="@string/menu_fav" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/video"
+            android:title="@string/menu_videos" />
     </group>
     <group>
         <item

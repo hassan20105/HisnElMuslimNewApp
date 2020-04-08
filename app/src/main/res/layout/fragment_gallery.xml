@@ -12,15 +12,13 @@
         android:background="@color/toolbar"
         android:orientation="horizontal"
         android:weightSum="4">
-
-
-        <ImageView
-            android:id="@+id/fback"
+      <!--  <ImageView
+            android:id="@+id/dialogMenu"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
             android:layout_weight="0.5"
-            app:srcCompat="@drawable/back" />
+            app:srcCompat="@drawable/menu" />-->
 
         <TextView
             android:id="@+id/headerName"
@@ -33,14 +31,14 @@
             android:textColor="#ffff"
             android:textSize="18sp"
             android:textStyle="normal|bold" />
-
         <ImageView
-            android:id="@+id/dialogMenu"
+            android:id="@+id/fback"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="5dp"
-            android:layout_weight="0.5"
-            app:srcCompat="@drawable/menu" />
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

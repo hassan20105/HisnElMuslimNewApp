@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/nav_home">
 
     <fragment
         android:id="@+id/nav_home"
@@ -33,7 +33,6 @@
         android:id="@+id/nav_fav"
         android:name="com.hisnElMuslem.myapplication.ui.gallery.GalleryFragment"
         android:label="@string/menu_home"
-
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
@@ -41,4 +40,10 @@
         android:name="com.hisnElMuslem.myapplication.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_about"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_videos"
+        android:name="com.hisnElMuslem.myapplication.ui.Youtube.YoutubePageFragment"
+        android:label="@string/menu_videos"
+        tools:layout="@layout/youtube_fragment_layout" />
+
 </navigation>

@@ -2,12 +2,11 @@
     <string name="app_name">حَصْنْ اَلْمُسْلَمْ</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="menu_home">الاذكار</string>
     <string name="menu_fav">الاذكار المفضلة</string>
+    <string name="menu_videos">سماع الاذكار</string>
     <string name="menu_about">عن البرنامج</string>
     <string name="home_second">Home Second</string>
     <string-array name="videoList">
@@ -21,5 +20,10 @@
         <item>dITvJpdpfqM</item>
         <item>_Aq4TPhfHA8</item>
         <item>HbY8x9tx-G0</item>
+        <item>3xQae_5aO-Y</item>
+        <item>u_V5AkFrw8s</item>
+        <item>W0F683jWlQg</item>
+        <item>ejXO3Cx4W-k</item>
+        <item>qHzZWrDj40o</item>
     </string-array>
 </resources>

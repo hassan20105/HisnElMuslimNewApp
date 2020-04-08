@@ -9,14 +9,17 @@ import android.view.Menu;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.hisnElMuslem.myapplication.R;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.core.view.GravityCompat;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
@@ -42,7 +45,7 @@ public class MainActivity extends AppCompatActivity  {
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setItemBackground(getResources().getDrawable(R.drawable.side_nav_bar));
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_fav, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_fav,R.id.nav_slideshow,R.id.nav_videos)
                 .setDrawerLayout(drawer)
                 .build();
 
@@ -74,12 +77,6 @@ public class MainActivity extends AppCompatActivity  {
 
 
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
-                || super.onSupportNavigateUp();
-    }
 
 
 
