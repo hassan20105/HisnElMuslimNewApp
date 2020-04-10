@@ -23,6 +23,13 @@
     </group>
     <group>
         <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/setting"
+            android:title="الاعدادات" />
+    </group>
+
+    <group>
+        <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/about"
             android:title="@string/menu_about" />

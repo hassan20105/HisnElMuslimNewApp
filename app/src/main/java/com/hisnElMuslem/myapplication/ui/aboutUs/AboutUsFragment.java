@@ -1,4 +1,4 @@
-package com.hisnElMuslem.myapplication.ui.slideshow;
+package com.hisnElMuslem.myapplication.ui.aboutUs;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,14 +9,14 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.hisnElMuslem.myapplication.R;
 
-public class SlideshowFragment extends Fragment {
+public class AboutUsFragment extends Fragment {
 
 
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_slideshow,container,false);
+        View root = inflater.inflate(R.layout.fragment_aboutus,container,false);
         return root;
     }
 

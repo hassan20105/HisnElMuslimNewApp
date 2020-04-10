@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.Menu;
 import android.view.View;
@@ -13,11 +14,13 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.hisnElMuslem.myapplication.R;
+import com.hisnElMuslem.myapplication.ui.Setting.SettingFragmnet;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.core.view.GravityCompat;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
@@ -45,7 +48,7 @@ public class MainActivity extends AppCompatActivity  {
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setItemBackground(getResources().getDrawable(R.drawable.side_nav_bar));
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_fav,R.id.nav_slideshow,R.id.nav_videos)
+                R.id.nav_home, R.id.nav_fav,R.id.nav_slideshow,R.id.nav_setting,R.id.nav_videos)
                 .setDrawerLayout(drawer)
                 .build();
 
@@ -70,14 +73,21 @@ public class MainActivity extends AppCompatActivity  {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId())
+        {
+            case R.id.action_settings:
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.nav_host_fragment, new SettingFragmnet());
+                ft.commit();
+                break;
+        }
 
-
-
-
-
+        return super.onOptionsItemSelected(item);
+    }
 }

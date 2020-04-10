@@ -1,9 +1,12 @@
 package com.hisnElMuslem.myapplication.ui.Youtube;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,11 +29,21 @@ public class YoutubePageFragment extends Fragment {
          video_rec = view.findViewById(R.id.video_rec);
         video_rec.setHasFixedSize(true);
         //to use RecycleView, you need a layout manager. default is LinearLayoutManager
-        LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity());
-        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        video_rec.setLayoutManager(linearLayoutManager);
-        adapter=new VideoRecyclerAdapter(getActivity());
-        video_rec.setAdapter(adapter);
+        if(isNetworkConnected()) {
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
+            linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+            video_rec.setLayoutManager(linearLayoutManager);
+            adapter = new VideoRecyclerAdapter(getActivity());
+            video_rec.setAdapter(adapter);
+        }
+        else
+            Toast.makeText(getActivity(), "Check Internet Connection", Toast.LENGTH_SHORT).show();
         return view;
     }
+    private boolean isNetworkConnected() {
+        ConnectivityManager cm = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        return cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnected();
+    }
+
 }

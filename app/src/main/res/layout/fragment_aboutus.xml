@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/nav"
-    tools:context=".ui.slideshow.SlideshowFragment">
+    tools:context=".ui.aboutUs.AboutUsFragment">
     <ImageView
         android:layout_marginTop="25dp"
         android:id="@+id/imageView2"
@@ -16,7 +16,6 @@
         android:src="@drawable/splachapp" />
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="35dp"
@@ -26,13 +25,14 @@
         android:textColor="@color/toolbar"
         android:text="الاصدار الاول" />
 
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:progressBackgroundTint="@color/toolbar"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:textStyle="bold"
         android:layout_marginTop="15dp"
-        android:max="5"
-        android:min="0"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:gravity="center"
+        android:textColor="@color/toolbar"
+        android:text="رمضان كريم" />
+
 </LinearLayout>

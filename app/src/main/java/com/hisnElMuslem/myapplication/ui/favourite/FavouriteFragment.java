@@ -1,4 +1,4 @@
-package com.hisnElMuslem.myapplication.ui.gallery;
+package com.hisnElMuslem.myapplication.ui.favourite;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,27 +6,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.hisnElMuslem.myapplication.Activities.FavouriteAzkarActivity;
 import com.hisnElMuslem.myapplication.Activities.MainActivity;
 import com.hisnElMuslem.myapplication.Adapters.AzkarRecycleViewAdapter;
 import com.hisnElMuslem.myapplication.R;
 import com.hisnElMuslem.myapplication.Services.Databases.AzkarDBServices;
 
-public class GalleryFragment extends Fragment {
+public class FavouriteFragment extends Fragment {
 
 
-    private GalleryViewModel galleryViewModel;
+    private FavouriteViewModel galleryViewModel;
     RecyclerView recyclerView;
     private AzkarDBServices azkarDBServices;
     private AzkarRecycleViewAdapter recyclerViewAdapter;
@@ -35,8 +30,8 @@ public class GalleryFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         galleryViewModel =
-                ViewModelProviders.of(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+                ViewModelProviders.of(this).get(FavouriteViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_favourite, container, false);
         fback = root.findViewById(R.id.fback);
         fback.setOnClickListener(new View.OnClickListener() {
             @Override

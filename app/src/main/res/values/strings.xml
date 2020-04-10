@@ -8,6 +8,7 @@
     <string name="menu_fav">الاذكار المفضلة</string>
     <string name="menu_videos">سماع الاذكار</string>
     <string name="menu_about">عن البرنامج</string>
+    <string name="setting">أعدادات السبحة</string>
     <string name="home_second">Home Second</string>
     <string-array name="videoList">
         <item>qNFkHHHeF48</item>
@@ -26,4 +27,6 @@
         <item>ejXO3Cx4W-k</item>
         <item>qHzZWrDj40o</item>
     </string-array>
+
+
 </resources>

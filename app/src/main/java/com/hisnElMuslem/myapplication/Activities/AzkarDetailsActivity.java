@@ -31,6 +31,7 @@ public class AzkarDetailsActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_azkar_details);
         azkarDBServices = new AzkarDBServices(this);
+
         headerNameTV = findViewById(R.id.headerName);
         headerNameTV.setText(getIntent().getStringExtra("category"));
         ArrayList<String> zekrItems = getIntent().getStringArrayListExtra("azkarList");

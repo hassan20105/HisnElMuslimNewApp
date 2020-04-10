@@ -19,24 +19,14 @@ public class SplashScreenActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash_screen);
-      /*  new Handler().postDelayed(new Runnable() {
+        new Handler().postDelayed(new Runnable() {
                                       @Override
                                       public void run() {
-                                          startActivity(new Intent(SplashScreenActivity.this,OptionActivity.class));
+                                          startActivity(new Intent(SplashScreenActivity.this,MainActivity.class));
                                       }
                                   }
                 ,
-                3000);*/
+                3000);
     }
 
-    public void onclick(View view) {
-        switch (view.getId()) {
-            case R.id.videoBTN:
-                startActivity(new Intent(this, YoutubeActivity.class));
-                break;
-            case R.id.readBTN:
-                startActivity(new Intent(this, MainActivity.class));
-                break;
-        }
-    }
 }
